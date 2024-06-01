@@ -2,11 +2,13 @@
 name = "satos"
 version = "0.1.0"
 edition = "2021"
+default-run = "satos"
 
 [workspace]
 members = ["kernel"]
 
 [dependencies]
+ovmf-prebuilt = "0.1.0-alpha.1"
 
 [build-dependencies]
 kernel = { path = "kernel", artifact = "bin", target = "x86_64-unknown-none" }

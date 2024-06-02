@@ -16,6 +16,7 @@ pub(crate) fn init_logger(buffer: &'static mut [u8], info: FrameBufferInfo) {
     log::set_logger(logger).expect("Logger alreasy set");
     log::set_max_level(log::LevelFilter::Trace);
     log::info!("The mathematics says that 2 + 2 = {}", 2 + 2);
+    log::error!("Testing");
 }
 
 /// This function is called on panic.
